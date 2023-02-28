@@ -16,7 +16,7 @@ else:
     print("\nNope. That is not the number I am thinking of. Your chances were pretty small though.")
     hint=input("Do You need a hint (y/n)?: ")
     if hint is confirmation:
-        if guess1%3 ==0:
+        if number%3 ==0:
             hint1="The number can be divided by 3."
             print("\nThe number can be divided by 3.")
             guess2=int(input("\nWhat number am I thinking of?: "))
@@ -36,8 +36,8 @@ if guess2 is number:
     exit()
 else:
     print("\nYou failed this time.")
-    print("I will give You a hint:")
-    if guess2 > 25:
+    print("I will give You a hint: ")
+    if number>25:
         hint2="The number is higher than 25."
         print("The number is higher than 25.")
         guess3=int(input("\nWhat number am I thinking of?: "))
@@ -53,12 +53,12 @@ if guess3 is number:
     exit()
 else:
     print("\nYou failed this time. That was Your 3rd guess.")
-    print("I will give You another hint.")
-    if guess3%5==0 and guess3%2==0:
+    print("I will give You another hint: ")
+    if number%5==0 and number%2==0:
         hint3="The number can be divided by 2 and by 5."
         print("The number can be divided by 2 and by 5.")
         
-    elif guess3%5!=0 and guess3%2==0:
+    elif number%5!=0 and number%2==0:
         hint3="The number can be divided by 2 but can NOT be divided by 5."
         print("The number can be divided by 2 but can NOT be divided by 5.")
         
