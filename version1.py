@@ -81,6 +81,6 @@ guess4=int(input("\nWhat number am I thinking of?: "))
 
 while guess4 is not number:
     print("\nNot so great, try on more time.")
-    guess4=int(input("\nWhat number am I thinking of?: "))
+guess4=int(input("\nWhat number am I thinking of?: "))
 print("\nGood job! You are a winner!")
 exit()
