@@ -4,7 +4,7 @@ confirmation = "y"
 
 print("\nHello My friend!\nWe are going to play a guessing game.\nI am thinking of number between 1-50\n")
 number=random.randint(1,50)
-
+print(number)
 guess1=int(input("What number am I thinking of?: "))
 
 # FIRST GUESS:
@@ -83,4 +83,5 @@ while guess4 is not number:
     print("\nNot so great, try on more time.")
 guess4=int(input("\nWhat number am I thinking of?: "))
 print("\nGood job! You are a winner!")
+#print("You guessed in the ",count," time.")
 exit()
