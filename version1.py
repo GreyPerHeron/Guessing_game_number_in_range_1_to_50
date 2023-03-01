@@ -32,7 +32,7 @@ else:
 # SECOND GUESS:
 
 if guess2 is number:
-    print("\nThat was impressive! You did it so fast!")
+    print("\nThat was impressive! Second guess... You did it so fast!")
     exit()
 else:
     print("\nYou failed this time.")
@@ -49,7 +49,7 @@ else:
 # THIRD GUESS:
 
 if guess3 is number:
-    print("\nThat was impressive! You did it so fast!")
+    print("\nThat was impressive! You did it in the third guess!")
     exit()
 else:
     print("\nYou failed this time. That was Your 3rd guess.")
@@ -77,11 +77,12 @@ print(hint3)
 print("\nThere will be no more clues. Keep trying. You can do this.")
 guess4=int(input("\nWhat number am I thinking of?: "))
 
-# 4th guess and so on...
-
+# 5th guess and so on...
+count=4
 while guess4 is not number:
     print("\nNot so great, try on more time.")
-guess4=int(input("\nWhat number am I thinking of?: "))
+    guess4=int(input("\nWhat number am I thinking of?: "))
+    count+=1
 print("\nGood job! You are a winner!")
-#print("You guessed in the ",count," time.")
+print("You guessed in the ",count," time.")
 exit()
