@@ -4,7 +4,6 @@ confirmation = "y"
 
 print("\nHello My friend!\nWe are going to play a guessing game.\nI am thinking of number between 1-50\n")
 number=random.randint(1,50)
-print(number)
 guess1=int(input("What number am I thinking of?: "))
 
 # FIRST GUESS:
